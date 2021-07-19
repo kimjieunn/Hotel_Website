@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sogo Hotel by Colorlib.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=|Roboto+Sans:400,700|Playfair+Display:400,700">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <header class="site-header js-site-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-6 col-lg-4 site-logo" data-aos="fade"><a href="index.html">Sogo Hotel</a></div>
+          <div class="col-6 col-lg-8">
+
+
+            <div class="site-menu-toggle js-site-menu-toggle"  data-aos="fade">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- END menu-toggle -->
+
+            <div class="site-navbar js-site-navbar">
+              <nav role="navigation">
+                <div class="container">
+                  <div class="row full-height align-items-center">
+                    <div class="col-md-6 mx-auto">
+                      <ul class="list-unstyled menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li class="active"><a href="findahotel.html">Find a Hotel</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END head -->
+
+    <section class="site-hero inner-page overlay" style="background-image: url(images/hero_4.jpg)" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+          <div class="col-md-10 text-center" data-aos="fade">
+            <h1 class="heading mb-3">찾아오시는 길</h1>
+            <ul class="custom-breadcrumbs mb-4">
+              <li><a href="index.html">Home</a></li>
+              <li>&bullet;</li>
+              <li>찾아오시는 길
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </div>
+      </a>
+    </section>
+    <!-- END section -->
+
+    <section class="section contact-section" id="next">
+            
+            <form action="#" method="post" class="bg-white p-md-5 p-4 mb-5 border">
+
+              <head>
+                <p><span style="font-size: 3em; font-weight: 1000;">찾아오시는 길</span></p>
+                <meta charset="UTF-8" />
+                <title>Insert title here</title>
+                <style>
+                  #myCanvas {
+                    width: 1420px;
+                    height: 600px;
+                    background-color: #ccc;
+                  }
+                </style>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLbQ-W7I6xDQGg0omy5nyf3yUb8ggxmBk"></script>
+                <script>
+                  function myMap() {
+                    var mapCanvas = document.getElementById("myCanvas");
+                    var myLatlng = new google.maps.LatLng(36.542630, 128.796962);
+            
+                    var mapOptions = {
+                      // 구글 맵 옵션
+                      center: myLatlng,
+                      zoom: 16,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    };
+            
+                    // 구글 맵 생성
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+            
+                    var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      draggable: true, // 마커 드래그 가능
+                      title: "  ", // 마커 : 도움말 풍선(마우스 오버 시)
+                    });
+                    var contentString =
+          '<div style="width:100px;height:50px;">호텔 로고</div>'; // 말풍선 내용
+
+            
+                    var infowindow = new google.maps.InfoWindow({
+                      content: contentString,
+                      size: new google.maps.Size(200, 100),
+                    });
+                    google.maps.event.addListener(marker, "click", function () {
+                      infowindow.open(map, marker);
+            
+                      if (marker.getAnimation() != null) {
+                        marker.setAnimation(null);
+                      } else {
+                        marker.setAnimation(google.maps.Animation.BOUNCE);
+                      }
+                    });
+                    marker.setMap(map);
+                  }
+                </script>
+              </head>
+              <body onload="myMap()">
+                <div id="myCanvas"></div>
+              </body>
+              <p><span>       </span></p>
+              <div style="border:2px solid #fff; padding:15px; border-radius: 5px; background-color:whitesmoke;">
+                <p><span class="d-block" style="font-size: 1.5em; font-weight: 1000;">주소:</span> <span> 경상북도 안동시 용상동 경동로 1375</span></p>
+                <p><span class="d-block" style="font-size: 1.5em; font-weight: 1000;">연락처:</span> <span> (+82) 234 4567 8910</span></p>
+              </div>
+              <p><span>       </span></p>
+                <div style="border:2px solid #fff; padding:20px; border-radius: 5px; background-color:whitesmoke;">
+                <p><span class="d-block" style="font-size: 1.5em; font-weight: 1000;">교통편</span> 
+                  <span class="d-block" style="font-size: 1.2em; font-weight: 500;"> 자가용 이용시</span> <span>서울방면:영동고속도로 → 만종JC → 중앙고속도로(남원주IC) → 영주 → 서안동IC</span><br> <span>대구방면: 중앙고속도로 → 남안동IC → 안동대학교 </span><br> <span>부산방면: 경부고속도로 → 금호JC → 남안동IC → 안동대학교 </span>
+                  <p><span>       </span></p>
+                  <span class="d-block" style="font-size: 1.2em; font-weight: 500;"> 대중교통 이용시</span> <span>* 1번: 안동터미널-송현-옥동-태화동-신시장-용상동-안동대학교-태화동-옥동-송현-안동터미널 </span><br> <span> &nbsp;&nbsp;&nbsp;운행시간 : 안동대출발 06:35 ~ 22:05 10분 간격운행</span> <br> <span>*11번: 아이파크(기점) – 통합관제센터 – 호명초등학교 – 우방아이유쉘2차 – 우방아이유쉘1차 – 상록아파트 – 풍천중학교 – 경북도청 – 국립종자원 – 풍산읍행정복지센터 – 안동과학대 – <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;안동터미널 – 태화오거리 – 성소병원 – 교보생명 – 안동역 – 용상동 – 안동대(종점) </span><br><span>&nbsp;&nbsp;&nbsp;운행시간 : 안동대 출발 06:40 ~ 22:15, 10~20분 간격운행</span> <br><span>&nbsp;&nbsp;&nbsp;외 421번, 624번, 628번, 633번</span> </p>
+                </div>
+                </form>
+    </section>
+
+    <section class="section testimonial-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-7">
+            <h2 class="heading" data-aos="fade-up">고객의 소리</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="js-carousel-2 owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+            
+            <div class="testimonial text-center slider-item">
+              <div class="author-image mb-3">
+                <img src="images/person_1.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
+              </div>
+              <blockquote>
+
+                <p>&ldquo;두든이라는 이름의 작은 강이 그들의 집 옆을 흐르고 그곳에 필요한 레겔리아를 공급한다. 이 나라는 구운 문장들이 입 속으로 날아드는 천국이다.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; 진 스미스</em></p>
+            </div> 
+
+            <div class="testimonial text-center slider-item">
+              <div class="author-image mb-3">
+                <img src="images/person_2.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
+              </div>
+              <blockquote>
+                <p>&ldquo;모든 강력한 포인팅 조차도 맹문 텍스트에 대한 통제력을 가지고 있지 않다. 그러나 어느 날 로렘 입숨이라는 이름의 맹문 텍스트의 작은 줄은 먼 문법의 세계로 떠나기로 결정했다.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; 존 도우</em></p>
+            </div>
+
+            <div class="testimonial text-center slider-item">
+              <div class="author-image mb-3">
+                <img src="images/person_3.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
+              </div>
+              <blockquote>
+
+                <p>&ldquo;이탈리아 산맥의 첫 번째 언덕에 다다랐을 때, 그녀는 그녀의 고향 북마크그로브의 스카이라인, 알파벳 빌리지의 헤드라인이자 자신의 도로인 라인 레인의 하행선에서 마지막 광경을 보았다.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; 존 도우</em></p>
+            </div>
+
+
+            <div class="testimonial text-center slider-item">
+              <div class="author-image mb-3">
+                <img src="images/person_1.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
+              </div>
+              <blockquote>
+
+                <p>&ldquo;두든이라는 이름의 작은 강이 그들의 집 옆을 흐르고 그곳에 필요한 레겔리아를 공급한다. 이 나라는 구운 문장들이 입 속으로 날아드는 천국이다.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; 진 스미스</em></p>
+            </div> 
+
+            <div class="testimonial text-center slider-item">
+              <div class="author-image mb-3">
+                <img src="images/person_2.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
+              </div>
+              <blockquote>
+                <p>&ldquo;모든 강력한 포인팅 조차도 맹문 텍스트에 대한 통제력을 가지고 있지 않다. 그러나 어느 날 로렘 입숨이라는 이름의 맹문 텍스트의 작은 줄은 먼 문법의 세계로 떠나기로 결정했다.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; 존 도우</em></p>
+            </div>
+
+            <div class="testimonial text-center slider-item">
+              <div class="author-image mb-3">
+                <img src="images/person_3.jpg" alt="Image placeholder" class="rounded-circle mx-auto">
+              </div>
+              <blockquote>
+
+                <p>&ldquo;이탈리아 산맥의 첫 번째 언덕에 다다랐을 때, 그녀는 그녀의 고향 북마크그로브의 스카이라인, 알파벳 빌리지의 헤드라인이자 자신의 도로인 라인 레인의 하행선에서 마지막 광경을 보았다.&rdquo;</p>
+              </blockquote>
+              <p><em>&mdash; 존 도우</em></p>
+            </div>
+
+          </div>
+            <!-- END slider -->
+        </div>
+
+      </div>
+    </section>
+
+    
+    
+    <section class="section bg-image overlay" style="background-image: url('images/hero_4.jpg');">
+        <div class="container" >
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up">
+              <h2 class="text-white font-weight-bold">최고의 숙박 장소. 지금 예약하세요!</h2>
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
+              <a href="reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5">예약하기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="section footer-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-3 mb-5">
+            <ul class="list-unstyled link">
+              <li><a href="#">회사 소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인 정보 정책</a></li>
+             <li><a href="#">객실</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5">
+            <ul class="list-unstyled link">
+              <li><a href="#">객실 및 스위트룸</a></li>
+              <li><a href="#">회사 소개</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">레스토랑</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5 pr-md-5 contact-info">
+            <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
+            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>주소 :</span> <span> 경상북도 안동시 용상동<br>경동로 1375</span></p>
+            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>연락처 :</span> <span> (+82) 435 3533</span></p>
+            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>이메일 :</span> <span> info@domain.com</span></p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <p>소식 받아보기</p>
+            <form action="#" class="footer-newsletter">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="이메일">
+                <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <p class="col-md-6 text-left">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+            
+          <p class="col-md-6 text-right social">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-instagram"></span></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    
+    <script src="js/aos.js"></script>
+    
+    <script src="js/bootstrap-datepicker.js"></script> 
+    <script src="js/jquery.timepicker.min.js"></script> 
+
+    
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
