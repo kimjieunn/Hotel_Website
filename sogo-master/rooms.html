@@ -36,6 +36,20 @@
             <a href="index.html">Sogo Hotel</a>
           </div>
           <div class="col-6 col-lg-8">
+            <div align="right">
+              <a onclick="showPopup()" style="color: white; margin-right: 110px; margin-top: 30px" ;
+                >login</a
+              >
+            </div>
+            <div align="right" style="display: none">
+              <a
+                onclick="showPopup()"
+                style="color: white; margin-right: 110px; margin-top: 30px"
+                id="btn-logout"
+                ;
+                >logout</a
+              >
+            </div>
             <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
               <span></span>
               <span></span>
@@ -161,7 +175,7 @@
               </figure>
               <div class="p-3 text-center room-info">
                 <h2>Standard Double</h2>
-                <span class="text-uppercase letter-spacing-1">10만 2645원 / 1박</span>
+                <span class="text-uppercase letter-spacing-1">10만 5000원 / 1박</span>
               </div>
             </a>
           </div>
@@ -173,7 +187,7 @@
               </figure>
               <div class="p-3 text-center room-info">
                 <h2>Deluxe Triple</h2>
-                <span class="text-uppercase letter-spacing-1">13만 6860원 / 1박</span>
+                <span class="text-uppercase letter-spacing-1">17만 6860원 / 1박</span>
               </div>
             </a>
           </div>
@@ -185,7 +199,7 @@
               </figure>
               <div class="p-3 text-center room-info">
                 <h2>Deluxe Family</h2>
-                <span class="text-uppercase letter-spacing-1">28만 5125원 / 1박</span>
+                <span class="text-uppercase letter-spacing-1">20만 8000원 / 1박</span>
               </div>
             </a>
           </div>
@@ -197,7 +211,7 @@
               </figure>
               <div class="p-3 text-center room-info">
                 <h2>Ondol Suite</h2>
-                <span class="text-uppercase letter-spacing-1">10만 2645원 / 1박</span>
+                <span class="text-uppercase letter-spacing-1">28만 8500원 / 1박</span>
               </div>
             </a>
           </div>
@@ -209,7 +223,7 @@
               </figure>
               <div class="p-3 text-center room-info">
                 <h2>Quad Suite</h2>
-                <span class="text-uppercase letter-spacing-1">13만 6860원 / 1박</span>
+                <span class="text-uppercase letter-spacing-1">30만 6860원 / 1박</span>
               </div>
             </a>
           </div>
@@ -221,7 +235,7 @@
               </figure>
               <div class="p-3 text-center room-info">
                 <h2>Presidential Suite</h2>
-                <span class="text-uppercase letter-spacing-1">28만 5125원 / 1박</span>
+                <span class="text-uppercase letter-spacing-1">35만 8000원 / 1박</span>
               </div>
             </a>
           </div>
@@ -317,18 +331,17 @@
         <div class="row mb-4">
           <div class="col-md-3 mb-5">
             <ul class="list-unstyled link">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Rooms</a></li>
+              <li><a href="index.html">홈</a></li>
+              <li><a href="about.html">회사 소개</a></li>
+              <li><a href="rooms.html">객실 및 스위트룸</a></li>
+              <li><a href="events.html">이벤트</a></li>
             </ul>
           </div>
           <div class="col-md-3 mb-5">
             <ul class="list-unstyled link">
-              <li><a href="#">The Rooms &amp; Suites</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Restaurant</a></li>
+              <li><a href="reservation.html">예약하기</a></li>
+              <li><a href="contact.html">문의하기</a></li>
+              <li><a href="findahotel.html">찾아오시는 길</a></li>
             </ul>
           </div>
           <div class="col-md-3 mb-5 pr-md-5 contact-info">
@@ -401,5 +414,8 @@
     <script src="js/jquery.timepicker.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script src="js/ready.js"></script>
+    // 로그인 로그아웃 숨기고 나타내기
   </body>
 </html>

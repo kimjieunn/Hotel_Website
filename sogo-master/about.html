@@ -36,6 +36,12 @@
             <a href="index.html">Sogo Hotel</a>
           </div>
           <div class="col-6 col-lg-8">
+            <div align="right">
+              <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;";>login</a>
+            </div>
+            <div align="right" style="display: none">
+              <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;" id="btn-logout"; >logout</a>
+            </div>
             <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
               <span></span>
               <span></span>
@@ -394,17 +400,17 @@
         <div class="row mb-4">
           <div class="col-md-3 mb-5">
             <ul class="list-unstyled link">
-              <li><a href="#">회사 소개</a></li>
-              <li><a href="#">이용약관</a></li>
-              <li><a href="#">개인 정보 정책</a></li>
-              <li><a href="#">객실</a></li>
+              <li><a href="index.html">홈</a></li>
+              <li><a href="about.html">회사 소개</a></li>
+              <li><a href="rooms.html">객실 및 스위트룸</a></li>
+              <li><a href="events.html">이벤트</a></li>
             </ul>
           </div>
           <div class="col-md-3 mb-5">
             <ul class="list-unstyled link">
-              <li><a href="#">객실 및 스위트룸</a></li>
-              <li><a href="#">회사 소개</a></li>
-              <li><a href="#">문의하기</a></li>
+              <li><a href="reservation.html">예약하기</a></li>
+              <li><a href="contact.html">문의하기</a></li>
+              <li><a href="findahotel.html">찾아오시는 길</a></li>
             </ul>
           </div>
           <div class="col-md-3 mb-5 pr-md-5 contact-info">
@@ -475,5 +481,7 @@
     <script src="js/jquery.timepicker.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script src="js/ready.js"></script>
   </body>
 </html>
