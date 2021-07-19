@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
 
-    <script>
+    <script>   // 로그인 창 팝업으로
       function showPopup(){
         window.open("login.html", "a", "width=400, height=550, left=100, top=50");
       }
@@ -42,7 +42,12 @@
             <a href="index.html">Sogo Hotel</a>
           </div>
           <div class="col-6 col-lg-8">
-            <div align="right"><a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;";>login</a></div>
+            <div align="right">
+              <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;";>login</a>
+            </div>
+            <div align="right" style="display: none">
+              <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;" id="btn-logout";>logout</a>
+            </div>
             <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
               <span></span>
               <span></span>
@@ -894,5 +899,7 @@
     <script src="js/jquery.timepicker.min.js"></script>
 
     <script src="js/main.js"></script>
+    
+    <script src="js/ready.js"></script>
   </body>
 </html>

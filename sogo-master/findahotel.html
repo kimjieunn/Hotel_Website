@@ -31,8 +31,12 @@
         <div class="row align-items-center">
           <div class="col-6 col-lg-4 site-logo" data-aos="fade"><a href="index.html">Sogo Hotel</a></div>
           <div class="col-6 col-lg-8">
-
-
+            <div align="right">
+              <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;";>login</a>
+            </div>
+            <div align="right" style="display: none">
+              <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;" id="btn-logout";>logout</a>
+            </div>
             <div class="site-menu-toggle js-site-menu-toggle"  data-aos="fade">
               <span></span>
               <span></span>
@@ -328,5 +332,7 @@
     
 
     <script src="js/main.js"></script>
+
+    <script src="js/ready.js"></script>
   </body>
 </html>
