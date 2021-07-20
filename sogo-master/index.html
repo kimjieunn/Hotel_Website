@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sogo Hotel by Colorlib.com</title>
+    <title>Slow With - Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
 
-    <script>
+    <script>   // 로그인 창 팝업으로
       function showPopup(){
         window.open("login.html", "a", "width=400, height=550, left=100, top=50");
       }
@@ -39,10 +39,15 @@
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-6 col-lg-4 site-logo" data-aos="fade">
-            <a href="index.html">Sogo Hotel</a>
+            <a href="index.html">Slow With</a>
           </div>
           <div class="col-6 col-lg-8">
-            <div align="right"><a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;";>login</a></div>
+            <div align="right">
+              <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;";>login</a>
+            </div>
+            <div align="right" style="display: none">
+              <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;" id="btn-logout";>logout</a>
+            </div>
             <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
               <span></span>
               <span></span>
@@ -62,7 +67,7 @@
                         <li><a href="events.html">Events</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="reservation.html">Reservation</a></li>
-                        <li class="active"><a href="findahotel.html">Find a Hotel</a></li>
+                        <li><a href="findahotel.html">Find a Hotel</a></li>
                       </ul>
                     </div>
                   </div>
@@ -172,12 +177,10 @@
           <div class="col-md-12 col-lg-4 order-lg-1" data-aos="fade-up">
             <h2 class="heading">Welcome!</h2>
             <p class="mb-4">
-              (인사말 같은거 쓰면 될것 같음)
-              저희 호텔에 오신 것을 환영합니다.
-              저희 호텔은 고객님의 
+              Slow With에 방문해 주신 모든 고객님들께 감사드립니다.
             </p>
             <p>
-              <a href="#" class="btn btn-primary text-white py-2 mr-3">Learn More</a>
+              <a href="about.html" class="btn btn-primary text-white py-2 mr-3">Learn More</a>
               <span class="mr-3 font-family-serif"><em>or</em></span>
               <a
                 href="video/Feel the Rhythm of KOREA ANDONG_1080p.mp4"
@@ -247,10 +250,9 @@
           <div class="col-md-7">
             <h2 class="heading" data-aos="fade-up">Photos</h2>
             <p data-aos="fade-up" data-aos-delay="100">
-              ()
-              Far far away, behind the word mountains, far from the countries Vokalia and
-              Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
-              at the coast of the Semantics, a large language ocean.
+              Slow With의 객실은 고객님을 위한 공간인 만큼</br>
+              고객님께 편안하고 안정적인 휴식이 제공될 수 있도록</br>
+              설계 및 디자인하였습니다.
             </p>
           </div>
         </div>
@@ -324,13 +326,224 @@
       </div>
     </section>
     <!-- END section -->
-
-     <!-- END section -->
-     <section class="section testimonial-section">
+    <section class="section bg-image overlay" style="background-image: url('images/hero_3.jpg')">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+              <h2 class="heading text-white" data-aos="fade">Our Restaurant Menu</h2>
+              <p class="text-white" data-aos="fade" data-aos-delay="100">
+                안동의 전경과 함께 최상의 정찬을 즐길 수 있는 레스토랑입니다.
+                국내 및 세계 각국에서 공수한 건강하고 신선한 제철 식자재 및 셰프들의 끊임없는 연구를 기반으로 
+                현대적이고도 독창적으로 구현한 음식을 선보입니다.
+                최고의 셰프들이 선보이는 창의적인 플레이트와 최상의 다이닝 서비스를 경험해보세요.
+              </p>
+            </div>
+          </div>
+          <div class="food-menu-tabs" data-aos="fade">
+            <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active letter-spacing-2"
+                  id="mains-tab"
+                  data-toggle="tab"
+                  href="#mains"
+                  role="tab"
+                  aria-controls="mains"
+                  aria-selected="true"
+                  >Mains</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link letter-spacing-2"
+                  id="desserts-tab"
+                  data-toggle="tab"
+                  href="#desserts"
+                  role="tab"
+                  aria-controls="desserts"
+                  aria-selected="false"
+                  >Desserts</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link letter-spacing-2"
+                  id="drinks-tab"
+                  data-toggle="tab"
+                  href="#drinks"
+                  role="tab"
+                  aria-controls="drinks"
+                  aria-selected="false"
+                  >Drinks</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content py-5" id="myTabContent">
+              <div
+                class="tab-pane fade show active text-left"
+                id="mains"
+                role="tabpanel"
+                aria-labelledby="mains-tab"
+              >
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="food-menu mb-5">
+                      <span class="text-primary h4 mb-3">₩ 42,000</span>
+                      <h3 class="text-white">
+                          <p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                              onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/steak.jpg'"
+                              border="0"><br><a href="#" class="text-white">&nbsp;한우 안심 스테이크</a></a></P>
+                      </h3>
+                      <p class="text-white text-opacity-7">
+                        ??호텔만의 시크릿 레시피로 조리한 안심 스테이크, 그릴드 베지 함께 제공<br>(스테이크 굽기 선택)
+                      </p>
+                    </div>
+                    <div class="food-menu mb-5">
+                      <span class="text-primary h4 mb-3">₩ 38,000</span>
+                      <h3 class="text-white">
+                          <p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                              onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/salmon steak.jpg'"
+                              border="0"><br><a href="#" class="text-white">&nbsp;연어 스테이크 </a></a></P>
+                      </h3>
+                      <p class="text-white text-opacity-7">
+                        수비드로 조리 후 로스팅한, 겉은 바삭하고 속은 부드러운 연어 스테이크, 그릴드 베지 함께 제공
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="food-menu mb-5">
+                      <span class="text-primary h4 mb-3">₩ 18,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/alio olio.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;씨푸드 알리오올리오</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        신선한 해산물, 올리브, 구운 마늘을 듬뿍 얹은 갈릭오일의 파스타<br><br>
+                      </p>
+                    </div>
+                    <div class="food-menu mb-5">
+                      <span class="text-primary h4 mb-3">₩ 16,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/egg benedict.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;에그 베네딕트</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        겉은 바삭하고 속은 촉촉한 라미장에 유정란, 베이컨, 샤워크림치즈 소스와 홀렌다이즈 소스를 더해 고소하고 담백하게 즐길 수 있는 에그 베네딕트 <br> (샐러드 제공)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .tab-pane -->
+  
+              <div
+                class="tab-pane fade text-left"
+                id="desserts"
+                role="tabpanel"
+                aria-labelledby="desserts-tab"
+              >
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="food-menu mb-5">
+                      <span class="d-block text-primary h4 mb-3">₩ 13,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/waffle.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;벨기에 와플</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        풍부한 버터향과 함께 상큼한 베리류와 생크림이 더해진 달콤 바삭한 와플
+                      </p>
+                    </div>
+                    <div class="food-menu mb-5">
+                      <span class="d-block text-primary h4 mb-3">₩ 13,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/pancake.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;팬케이크</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        신선한 계절과일과 시럽이 곁들여진 폭신폭신한 팬케이크 <br> (*시즌에 따라 계절과일 변경)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="food-menu mb-5">
+                      <span class="d-block text-primary h4 mb-3">₩ 8,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/pudding.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;커스타드 푸딩</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        산딸기와 커스타드 크림으로 달콤하고 상큼하게 즐길 수 있는 커스타드 푸딩
+                      </p>
+                    </div>
+                    <div class="food-menu mb-5">
+                      <span class="d-block text-primary h4 mb-3">₩ 20,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/mango shaved ice.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;망고 빙수</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        곱게 갈아 올린 얼음에 달콤한 애플망고를 더한 우유 빙수
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .tab-pane -->
+              <div
+                class="tab-pane fade text-left"
+                id="drinks"
+                role="tabpanel"
+                aria-labelledby="drinks-tab"
+              >
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="food-menu mb-5">
+                      <span class="d-block text-primary h4 mb-3">₩ 5,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/coffee.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;아메리카노</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        쌉싸름한 카카오의 바디감을 가진 브라질 원두와 상큼한 베리의 풍미가 돋보이는 에티오피아 원두가 블렌딩 된 아메리카노
+                      </p>
+                    </div>
+                    <div class="food-menu mb-5">
+                      <span class="d-block text-primary h4 mb-3">₩ 8,000</span>
+                          <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                              onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/fresh fruit juice.jpg'"
+                              border="0"><br><a href="#" class="text-white">&nbsp;생과일주스 (딸기, 키위, 바나나) <br> &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;(*계절한정 수박, 자두)</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        딸기, 키위, 바나나 등 신선한 생과일을 직접 갈아만든 주스
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="food-menu mb-5">
+                      <span class="d-block text-primary h4 mb-3">₩ 4,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/sparkling.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;탄산 (콜라, 사이다, 탄산수)</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        톡톡튀는 스파클링이 첨가된 음료<br><br>
+                      </p>
+                    </div>
+                    <div class="food-menu mb-5">
+                      <span class="d-block text-primary h4 mb-3">₩ 35,000~70,000</span>
+                      <h3 class="text-white"><p><a href="#" onclick="javascript:window.open('index.html','','width=30,height=30,scrollbars=no,resizable=no');return false" onfocus='this.blur()'><img src="images/white.png" 
+                          onMouseOut="this.src='images/white.png'" onMouseOver="this.src='images/wine.jpg'"
+                          border="0"><br><a href="#" class="text-white">&nbsp;레드 와인, 화이트 와인</a></a></P></h3>
+                      <p class="text-white text-opacity-7">
+                        레드 와인 - 카베르네 소비뇽, 메를로, 피노 누와, 카베르네 프랑 등 <br> 화이트 와인 - 샤르도네, 쇼비뇽 블랑, 리슬링, 피노 그리지오 등
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .tab-pane -->
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- END section --->
+     <section class="section testimonial-section bg-light">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-7">
-            <h2 class="heading" data-aos="fade-up">People Says</h2>
+            <h2 class="heading" data-aos="fade-up">Review</h2>
           </div>
         </div>
         <div class="row">
@@ -338,112 +551,108 @@
             <div class="testimonial text-center slider-item">
               <div class="author-image mb-3">
                 <img
-                  src="images/person_1.jpg"
+                  src="images/공지철.jpg"
                   alt="Image placeholder"
                   class="rounded-circle mx-auto"
                 />
               </div>
               <blockquote>
                 <p>
-                  &ldquo;A small river named Duden flows by their place and supplies it with the
-                  necessary regelialia. It is a paradisematic country, in which roasted parts of
-                  sentences fly into your mouth.&rdquo;
+                  &ldquo;룸컨디션이 깔끔하니 너무 좋았어요. 방도 넓었고 침구도 포근하니
+                  편안했습니다. 평일이라 사람이 많이 없어서 편하고 여유롭게 체크인 할 수 있었습니다.
+                  재방문 할 의사도 있습니다. &rdquo;
                 </p>
               </blockquote>
-              <p><em>&mdash; Jean Smith</em></p>
+              <p><em>&mdash; 공지철</em></p>
             </div>
 
             <div class="testimonial text-center slider-item">
               <div class="author-image mb-3">
                 <img
-                  src="images/person_2.jpg"
+                  src="images/박보영.jpg"
                   alt="Image placeholder"
                   class="rounded-circle mx-auto"
                 />
               </div>
               <blockquote>
                 <p>
-                  &ldquo;Even the all-powerful Pointing has no control about the blind texts it is
-                  an almost unorthographic life One day however a small line of blind text by the
-                  name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;
+                  &ldquo;나름 여행을 많이 하면서 좋은 숙소에 많이 머물렀다고 생각하는데 모든 면에서
+                  국내 숙소 중에 손에 꼽힐 정도의 레벨이라는 생각이 들었습니다. 모든 직원들이
+                  진심으로 고객을 응대한다는 느낌을 받았고 객실 컨디션도 아주 좋았습니다. &rdquo;
                 </p>
               </blockquote>
-              <p><em>&mdash; John Doe</em></p>
+              <p><em>&mdash; 박보영</em></p>
             </div>
 
             <div class="testimonial text-center slider-item">
               <div class="author-image mb-3">
                 <img
-                  src="images/person_3.jpg"
+                  src="images/윤두준.jpg"
                   alt="Image placeholder"
                   class="rounded-circle mx-auto"
                 />
               </div>
               <blockquote>
                 <p>
-                  &ldquo;When she reached the first hills of the Italic Mountains, she had a last
-                  view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-                  Village and the subline of her own road, the Line Lane.&rdquo;
+                  &ldquo;친구들과 호캉스 하려고 예약했습니다. 직원들의 친도와 객실의 청결함이 최고의
+                  수준입니다. 조용한 객실에서 편하게 쉬고 갑니다. 다음에 또 이용하고 싶습니다.
+                  &rdquo;
                 </p>
               </blockquote>
-              <p><em>&mdash; John Doe</em></p>
+              <p><em>&mdash; 윤두준</em></p>
             </div>
 
             <div class="testimonial text-center slider-item">
               <div class="author-image mb-3">
                 <img
-                  src="images/person_1.jpg"
+                  src="images/이지아.jpg"
                   alt="Image placeholder"
                   class="rounded-circle mx-auto"
                 />
               </div>
               <blockquote>
                 <p>
-                  &ldquo;A small river named Duden flows by their place and supplies it with the
-                  necessary regelialia. It is a paradisematic country, in which roasted parts of
-                  sentences fly into your mouth.&rdquo;
+                  &ldquo;접근성이 좋았습니다. 직원들이 너무 친절하셨구요. 아이들과 갔는데 불편함
+                  없이 알아서 모든걸 잘 해결해주셨습니다. 욕실도 넓고 깨끗해서 좋았습니다. &rdquo;
                 </p>
               </blockquote>
-              <p><em>&mdash; Jean Smith</em></p>
+              <p><em>&mdash; 이지아</em></p>
             </div>
 
             <div class="testimonial text-center slider-item">
               <div class="author-image mb-3">
                 <img
-                  src="images/person_2.jpg"
+                  src="images/정승환.jpg"
                   alt="Image placeholder"
                   class="rounded-circle mx-auto"
                 />
               </div>
               <blockquote>
                 <p>
-                  &ldquo;Even the all-powerful Pointing has no control about the blind texts it is
-                  an almost unorthographic life One day however a small line of blind text by the
-                  name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;
+                  &ldquo;멀리 휴가갈 시간이 없어서 호캉스를 했는데 너무 좋네요. 좋은 호텔에서 보내서
+                  다른 호텔 못갈가봐 걱정이네요. 호캉스로 이번 휴가 잘 힐링하다가 갑니다. &rdquo;
                 </p>
               </blockquote>
-              <p><em>&mdash; John Doe</em></p>
+              <p><em>&mdash; 정승환</em></p>
             </div>
 
             <div class="testimonial text-center slider-item">
               <div class="author-image mb-3">
                 <img
-                  src="images/person_3.jpg"
+                  src="images/한소희.jpg"
                   alt="Image placeholder"
                   class="rounded-circle mx-auto"
                 />
               </div>
               <blockquote>
                 <p>
-                  &ldquo;When she reached the first hills of the Italic Mountains, she had a last
-                  view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-                  Village and the subline of her own road, the Line Lane.&rdquo;
+                  &ldquo;시설도 깨끗하고 친절하고 뷰가 너무 좋았습니다 기억에 많이 남을 곳 같네요.
+                  기회가 되면 다시 한번 와보고 싶어요. &rdquo;
                 </p>
               </blockquote>
-              <p><em>&mdash; John Doe</em></p>
+              <p><em>&mdash; 한소희</em></p>
             </div>
           </div>
-          
           <!-- END slider -->
         </div>
       </div>
@@ -573,13 +782,13 @@
               <span class="d-block"
                 ><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span
               >
-              <span> (+82) 435 3533</span>
+              <span> (054) 820 5114</span>
             </p>
             <p>
               <span class="d-block"
                 ><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span
               >
-              <span> info@domain.com</span>
+              <span> slow_with@hotel.com</span>
             </p>
           </div>
           <div class="col-md-3 mb-5">
@@ -593,17 +802,7 @@
           </div>
         </div>
         <div class="row pt-5">
-          <p class="col-md-6 text-left">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with
-            <i class="icon-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+          <p class="col-md-6 text-left"></p>
 
           <p class="col-md-6 text-right social">
             <a href="#"><span class="fa fa-facebook"></span></a>
@@ -628,5 +827,7 @@
     <script src="js/jquery.timepicker.min.js"></script>
 
     <script src="js/main.js"></script>
+    
+    <script src="js/ready.js"></script>
   </body>
 </html>

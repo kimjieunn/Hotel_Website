@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sogo Hotel by Colorlib.com</title>
+    <title>Slow With - rooms</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -33,9 +33,23 @@
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-6 col-lg-4 site-logo" data-aos="fade">
-            <a href="index.html">Sogo Hotel</a>
+            <a href="index.html">Slow With</a>
           </div>
           <div class="col-6 col-lg-8">
+            <div align="right">
+              <a onclick="showPopup()" style="color: white; margin-right: 110px; margin-top: 30px" ;
+                >login</a
+              >
+            </div>
+            <div align="right" style="display: none">
+              <a
+                onclick="showPopup()"
+                style="color: white; margin-right: 110px; margin-top: 30px"
+                id="btn-logout"
+                ;
+                >logout</a
+              >
+            </div>
             <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
               <span></span>
               <span></span>
@@ -235,11 +249,11 @@
           <div class="col-md-7">
             <h2 class="heading" data-aos="fade">Great Offers</h2>
             <p data-aos="fade">
-              합리적인 가격에 편안하고 아늑한 객실과 고품격 다이닝을 갖춘 호텔 더본이 제주의 휴양
-              문화를 한층 높은 격으로 이끌어 나아갑니다. 호텔 더본은 지형과 물길에 순응하도록
-              설계되어, 정원이 자연으로 확장되는 구조를 통해 자연과 함께 호흡할 수 있는 공간입니다.
-              객실에서 보는 자연과 어우러진 푸른 제주의 조망은 포근한 힐링을 드립니다. 품격있는
-              당신에게 드리는 최상의 휴식. 호텔더본이 그 빛나는 순간과 동행합니다.
+              합리적인 가격에 편안하고 아늑한 객실과 고품격 다이닝을 갖춘 Slow With가 안동의 휴양
+              문화를 한층 높은 격으로 이끌어 나아갑니다. Slow With는 지형과 물길에 순응하도록
+              설계되어, 자연과 함께 호흡할 수 있는 공간입니다. 객실에서 보는 자연과 어우러진 푸른
+              안동의 조망은 포근한 힐링을 드립니다. 품격있는 당신에게 드리는 최상의 휴식. Slow
+              With가 그 빛나는 순간과 동행합니다.
             </p>
           </div>
         </div>
@@ -345,13 +359,13 @@
               <span class="d-block"
                 ><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span
               >
-              <span> (+82) 435 3533</span>
+              <span> (054) 820 5114</span>
             </p>
             <p>
               <span class="d-block"
                 ><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span
               >
-              <span> info@domain.com</span>
+              <span> slow_with@hotel.com</span>
             </p>
           </div>
           <div class="col-md-3 mb-5">
@@ -365,17 +379,7 @@
           </div>
         </div>
         <div class="row pt-5">
-          <p class="col-md-6 text-left">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with
-            <i class="icon-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+          <p class="col-md-6 text-left"></p>
 
           <p class="col-md-6 text-right social">
             <a href="#"><span class="fa fa-facebook"></span></a>
@@ -400,5 +404,7 @@
     <script src="js/jquery.timepicker.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script src="js/ready.js"></script>
   </body>
 </html>

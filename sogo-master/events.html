@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sogo Hotel by Colorlib.com</title>
+    <title>Slow With - events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -33,9 +33,23 @@
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-6 col-lg-4 site-logo" data-aos="fade">
-            <a href="index.html">Sogo Hotel</a>
+            <a href="index.html">Slow With</a>
           </div>
           <div class="col-6 col-lg-8">
+            <div align="right">
+              <a onclick="showPopup()" style="color: white; margin-right: 110px; margin-top: 30px" ;
+                >login</a
+              >
+            </div>
+            <div align="right" style="display: none">
+              <a
+                onclick="showPopup()"
+                style="color: white; margin-right: 110px; margin-top: 30px"
+                id="btn-logout"
+                ;
+                >logout</a
+              >
+            </div>
             <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
               <span></span>
               <span></span>
@@ -55,6 +69,7 @@
                         <li class="active"><a href="events.html">Events</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="findahotel.html">Find a Hotel</a></li>
                       </ul>
                     </div>
                   </div>
@@ -279,13 +294,13 @@
               <span class="d-block"
                 ><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span
               >
-              <span> (+82) 435 3533</span>
+              <span> (054) 820 5114</span>
             </p>
             <p>
               <span class="d-block"
                 ><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span
               >
-              <span> info@domain.com</span>
+              <span> slow_with@hotel.com</span>
             </p>
           </div>
           <div class="col-md-3 mb-5">
@@ -299,17 +314,7 @@
           </div>
         </div>
         <div class="row pt-5">
-          <p class="col-md-6 text-left">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with
-            <i class="icon-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+          <p class="col-md-6 text-left"></p>
 
           <p class="col-md-6 text-right social">
             <a href="#"><span class="fa fa-facebook"></span></a>
@@ -334,5 +339,7 @@
     <script src="js/jquery.timepicker.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script src="js/ready.js"></script>
   </body>
 </html>
