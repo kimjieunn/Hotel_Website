@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'font1';
+    src: url(fonts/Seoul-Namsan-Jangche-B.ttf) fotmat("truetype");
+    src: url(fonts/Seoul-Namsan-Jangche-B.eot) fotmat("embeddedopentype");
+    src: url(fonts/Seoul-Namsan-Jangche-B.woff) fotmat("woff");
+}
+
+.font1{font-family: font1; color:#fff; font-size: 25px; }
