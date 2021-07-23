@@ -25,12 +25,6 @@
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
 
-    <script>   // 로그인 창 팝업으로
-      function showPopup(){
-        window.open("login.html", "a", "width=400, height=550, left=100, top=50");
-      }
-    </script>
-
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -50,6 +44,11 @@
           <div class="col-6 col-lg-8">
             <div align="right">
               <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;";>LOGIN</a>
+            <div align="right"
+            style="color: white ; margin-right:110px; margin-bottom: -25px;";>
+              <a onclick=showPopup() 
+              class="text-uppercase letter-spacing-1" 
+              >login</a>
             </div>
             <div align="right" style="display: none">
               <a onclick=showPopup() style="color: white ; margin-right: 110px ; margin-top: 30px;" id="btn-logout"; >LOGOUT</a>
@@ -448,9 +447,11 @@
           <p class="col-md-6 text-left"></p>
 
           <p class="col-md-6 text-right social">
-            <a href="#"><span class="fa fa-facebook"></span></a>
-            <a href="#"><span class="fa fa-twitter"></span></a>
-            <a href="#"><span class="fa fa-instagram"></span></a>
+            <a href="https://www.facebook.com/anusns"><span class="fa fa-facebook"></span></a>
+            <a href="https://www.instagram.com/anusns_i/"><span class="fa fa-instagram"></span></a>
+            <a href="https://www.youtube.com/channel/UCQEkk5qbZP8txG-Y0VUM5rQ"
+              ><span class="fa fa-youtube-play"></span
+            ></a>
           </p>
         </div>
       </div>
